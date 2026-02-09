@@ -1,0 +1,117 @@
+/* Design system: warm grocery palette, Fraunces + Karla */
+:root {
+  --color-bg: #faf8f5;
+  --color-surface: #fff;
+  --color-text: #2c2a26;
+  --color-text-muted: #5c5852;
+  --color-accent: #4a7c59;
+  --color-accent-hover: #3d6b4a;
+  --color-warm: #c17f59;
+  --color-border: #e8e4de;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Karla', system-ui, sans-serif;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --shadow: 0 2px 8px rgba(44, 42, 38, 0.06);
+  --shadow-lg: 0 8px 24px rgba(44, 42, 38, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.section {
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md) var(--space-xl);
+  font-weight: 600;
+  border-radius: var(--radius);
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+  text-decoration: none;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+}
+
+.btn-outline:hover {
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+}
